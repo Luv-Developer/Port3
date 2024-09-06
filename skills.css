@@ -1,0 +1,98 @@
+.heading{
+    text-align: center;
+    font-weight:bold;
+    font-size:2rem;
+    color:rgb(8, 8, 87);
+    font-family: Arial, Helvetica, sans-serif;
+    padding:20px;
+    transition:0.1s;
+    animation:animate 2s linear infinite;
+}
+.heading:hover{
+    transition: 0.1s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.frontend{
+    padding:30px;
+    width:400px;
+    height:350px;
+    margin-left:150px;
+    background-color: rgb(66, 245, 66);
+    margin-top:50px;
+    border-radius:20px;
+    box-shadow:0px 0px 100px rgb(248, 249, 250);
+    font-family: monospace;
+    font-size:20px;
+    transition:0.1s;
+}
+.frontend:hover{
+    transition:0.1s;
+    background-color: rgb(72, 241, 26);
+}
+.backend{
+    padding:5px 20px;
+    margin-left:750px;
+    width:380px;
+    height:360px;
+    background-color: rgb(0, 229, 255);
+    margin-top:50px;
+    border-radius:20px;
+    box-shadow:0px 0px 100px rgb(238, 239, 242);
+    font-family: monospace;
+    font-size:20px;
+    transition:0.1s;
+}
+
+.backend:hover{
+    transition:0.1s;
+    background-color: rgb(8, 204, 243);
+}
+@keyframes animate{
+    100%{
+        filter:hue-rotate(360deg)
+    }
+}
+.btn{
+    margin-top:450px;
+    margin-left:80px;
+    background-color: rgb(18, 7, 83);
+    padding:2px 2px;
+    width:60px;
+    height:40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+    border-radius: 10px;
+    transition:0.1s;
+    color:white;
+}
+.btn:hover{
+    transition:0.1s;
+    animation:animatebtn 2s linear infinite;
+}
+@keyframes animatebtn{
+    100%{
+        filter:hue-rotate(360deg)
+    }
+}
+.btn2{
+    margin-top:-20px;
+    margin-bottom:10px;
+    margin-left:1000px;
+    background-color: rgb(18, 7, 83);
+    padding:2px 2px;
+    width:60px;
+    height:40px;
+    margin-bottom:10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+    border-radius: 10px;
+    transition:0.1s;
+    color:white;
+}
+.btn2:hover{
+    transition:0.1s;
+    animation:animatebtn 2s linear infinite;
+}

@@ -1,0 +1,162 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("bgimage.png");
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+}
+.heading{
+    text-align: center;
+    animation:animate 2s linear infinite;
+}
+.box1{
+    padding:25px 20px;
+    width:550px;
+    height:150px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(9, 204, 226);
+    margin-left:40px;
+    border-radius: 20px;
+    letter-spacing:0.1em;
+    text-align: center;
+    color:rgb(5, 17, 83);
+    box-shadow:0 0 50px white;
+    font-weight:bold;
+    animation-name:move;
+    animation-duration: 4s;
+    transition:0.1s
+}
+.box1:hover{
+    transition:0.1s;
+    background-color: aqua;
+}
+@keyframes move{
+    from{
+        transform: translateX(360px);
+    }
+}
+.box2{
+    padding:25px 20px;
+    width:550px;
+    height:150px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgb(246, 88, 31);
+    margin-left:40px;
+    border-radius: 20px;
+    letter-spacing:0.1em;
+    text-align: center;
+    color:rgb(25, 2, 39);
+    box-shadow:0 0 50px white;
+    font-weight:bold;
+    animation-name:moveopposite;
+    animation-duration: 4s;
+    transition:0.1s;
+    margin-top:30px;
+}
+.box2:hover{
+    transition:0.1s;
+    background-color: rgb(223, 66, 3);
+}
+@keyframes moveopposite{
+    from{
+        transform: translateX(-360px);
+    }
+}
+.box3{
+    padding:25px 20px;
+    width:550px;
+    height:150px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(55, 241, 83);
+    margin-left:40px;
+    border-radius: 20px;
+    letter-spacing:0.1em;
+    text-align: center;
+    color:rgb(1, 23, 16);
+    box-shadow:0 0 50px white;
+    font-weight:bold;
+    animation-name:move;
+    animation-duration: 4s;
+    transition:0.1s;
+    margin-top:30px;
+}
+.box3:hover{
+    transition:0.1s;
+    background-color: rgb(31, 243, 31);
+}
+.box4{
+    padding:25px 20px;
+    width:550px;
+    height:150px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:rgb(201, 248, 15);
+    margin-left:40px;
+    border-radius: 20px;
+    letter-spacing:0.1em;
+    text-align: center;
+    color:rgb(3, 44, 43);
+    box-shadow:0 0 50px white;
+    font-weight:bold;
+    animation-name:moveopposite;
+    animation-duration: 4s;
+    transition:0.1s;
+    margin-top:30px;
+}
+.box4:hover{
+    transition: 0.1s;
+    background-color: yellow;
+}
+.back{
+    margin-top:40px;
+    margin-right:500px;
+    margin-bottom:20px;
+    width:70px;
+    height:40px;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius:10px;
+    border:2px solid white;
+    background-color:rgb(8, 197, 197)
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.back:hover{
+    transition:0.1s;
+    background-color: rgb(43, 221, 234);
+}
+.back:active{
+    transition:0.1s;
+    background-color: rgb(12, 185, 185);
+    cursor: pointer;
+}
+.next{
+    margin-left:20px;
+    width:70px;
+    height:40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border:2px solid white;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.1s;
+    background-color: rgb(51, 232, 51);
+}
+.next:hover{
+    transition:0.1s;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+.next:active{
+    transition:0.1s;
+    background-color:rgb(26, 225, 26);
+}
+@keyframes animate{
+    100%{
+        filter:hue-rotate(360deg);
+    }
+}
